@@ -1,2 +1,2 @@
 # comp-test
-Test repo for comp flask tutorial
+Test repo for comp flask web service tutorial
