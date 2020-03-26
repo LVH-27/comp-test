@@ -42,13 +42,9 @@ def get_member(member_id):
 def add_member():
     """
     Member structure:
-    first_name = db.Column(db.String(255), nullable=False)
-    last_name = db.Column(db.String(255), nullable=False)
-    date_joined = db.Column(db.DateTime, nullable=False, server_default=func.now())
-    color = db.Column(db.String(255), nullable=False, default='blue')
-    blog_posts = db.relationship('BlogPost', backref="author")
-
+    first_name, last_name[, date_joined, color]
     """
+
     member_name = request.json
     if "first_name" not in request.json or\
         "last_name" not in request.json:
